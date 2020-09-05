@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symbol-search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body class="font-body bg-gray-100">
+    <div class="fixed text-teal-100 bg-teal-500 shadow-md border-2 border-teal-700 uppercase font-sub_title pl-4 pr-4 pt-2 pb-2 rounded-lg mb-4 ml-4 bottom-0 left-0">
+        <table>
+            <tr>
+                <td><svg viewBox="0 0 20 20" fill="currentColor" class="check-circle w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></td>
+                <td class="pl-2">Sybmol Copied</td>
+            </tr>
+        </table>
+    </div>
+    <div class="p-5 md:container md:mx-auto">
+        <!-- main_title -->
+        <p class="text-4xl text-gray-900 pt-10 md:pt-20 font-bold text-center uppercase font-main_title">Symbol Search</p>
+        
+        <!-- sub_title -->
+        <p class="text-xl text-gray-600 pt-2 pb-10 font-medium tracking-tight pb- text-center font-sub_title">Made for work by <span class="block md:inline"><a href="#"><span class="transition duration-200 ease-in-out border-b-8 border-teal-200 hover:border-teal-400 hover:text-gray-800">Farhan Bin Amin</span></a></span></p>
+        
+        <!-- bounce animation -->
+        <div class="flex justify-center items-center mb-8">
+            <svg class="animate-bounce w-6 h-6 text-gray-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+        <!-- search box -->
+        <input class="transition duration-200 ease-in-out mb-5 appearance-none border-2 bg-gray-100 border-teal-200 hover:bg-white rounded-lg w-full py-2 px-4 text-gray-900 leading-tight focus:outline-none focus:bg-white focus:border-teal-400" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search 123 symbols ...">
+
+        <!-- the grid -->
+        <div class="text-gray-700 hover:text-gray-900 grid gap-5 grid-flow-row grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+            <div class="transition duration-200 ease-in-out border-solid border-2 border-teal-200 hover:border-teal-400 rounded-lg flex justify-center items-center h-32 sm:h-32 md:h-40">demo-text</div>
+        </div>
+    </div>
+</body>
+</html>
