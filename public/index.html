@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Symbol Search</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">
 </head>
 <body class="bg-gray-100 font-body">
 
     <!-- copy successful message  -->
-    <div class="copy_successful_message font-sub_title">
+    <div class="copy_successful_message font-sub_title hidden" id="copy_successful">
         <table>
             <tr>
                 <td><svg viewBox="0 0 20 20" fill="currentColor" class="check-circle w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></td>
@@ -42,8 +41,36 @@
         <div class="grid_custom sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 hover:text-gray-900">
 
             <!-- grid items -->
-            <div class="grid_item  sm:h-32 md:h-40 hover:border-teal-400">demo-text<span class="grid_item_bottom_text">another-text</span> </div>
+            <div class="parentDiv grid_item sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ± </span><span class="grid_item_bottom_text text-base">Plus Minus</span><span class="hidden">plus minus pm</span></div>
+            <div class="parentDiv grid_item sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∞ </span><span class="grid_item_bottom_text text-base">Infinity</span><span class="hidden">infinity</span></div>
+            <div class="parentDiv grid_item sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≠ </span><span class="grid_item_bottom_text text-base">Not Equal To</span><span class="hidden">not equal to net</span></div>
+            <div class="parentDiv grid_item sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> × </span><span class="grid_item_bottom_text text-base">Multiplication sign</span><span class="hidden">multiplication</span></div>
         </div>
     </div>
+    <script>
+        // copySuccessfulMessage
+        function copySuccessfulMessage() {
+            document.getElementById("copy_successful").style.display = "block";
+            setTimeout(function(){
+                document.getElementById("copy_successful").style.display = "none"
+            }, 2000);
+        }
+
+        // copyTextToClipboard
+        var elements = document.getElementsByClassName("parentDiv");
+        Array.from(elements).forEach(function(element) {
+            element.addEventListener('click', copyTextToClipboard);
+        });
+        function copyTextToClipboard() {
+            var selection = window.getSelection();
+            var range = document.createRange();
+            let dataToCopy = this.getElementsByClassName('symbol_to_copy');
+            range.selectNodeContents(dataToCopy[0]);
+            selection.removeAllRanges(); // clears current selection
+            selection.addRange(range); // selects text
+            document.execCommand("Copy");
+            window.getSelection().removeAllRanges(); // deselects copied text
+        }
+    </script>
 </body>
 </html>
