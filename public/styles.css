@@ -22336,13 +22336,16 @@ video {
   color: #4a5568;
   color: rgba(74, 85, 104, var(--text-opacity));
   display: grid;
-  grid-gap: 1.25rem;
-  gap: 1.25rem;
+  grid-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
+  row-gap: 1.25rem;
   grid-auto-flow: row;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid_item{
+.grid_item_each{
   border-style: solid;
   border-width: 2px;
   --border-opacity: 1;

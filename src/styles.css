@@ -21,10 +21,10 @@
 }
 
 .grid_custom{
-    @apply text-gray-700 grid gap-5 grid-flow-row grid-cols-2;
+    @apply text-gray-700 grid gap-x-5 gap-y-5 grid-flow-row grid-cols-2;
 }
 
-.grid_item{
+.grid_item_each{
     @apply border-solid border-2 border-teal-200 rounded-lg flex justify-center items-center cursor-pointer relative h-32 transition duration-200 ease-in-out;
 }
 
