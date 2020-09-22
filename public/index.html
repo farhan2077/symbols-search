@@ -11,7 +11,7 @@
 <body class="bg-gray-100 font-body">
 
     <!-- copy successful message  -->
-    <div class="copy_successful_message font-sub_title hidden" id="copy_successful">
+    <div class="z-10 copy_successful_message font-sub_title hidden" id="copy_successful">
         <table>
             <tr>
                 <td><svg viewBox="0 0 20 20" fill="currentColor" class="check-circle w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></td>
@@ -37,10 +37,10 @@
         </div>
 
         <!-- search box -->
-        <input type="text" id="search_input_text" class="search_box focus:outline-none focus:bg-white focus:border-teal-400 hover:bg-white" type="text" placeholder=" Search 123 symbols ...">
+        <input type="text" id="search_input_text" class="search_box focus:outline-none focus:bg-white focus:border-teal-400 hover:bg-white" type="text" placeholder=" Search 70 symbols ...">
 
         <!-- grid custom -->
-        <div class="grid_custom sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 hover:text-gray-900">
+        <div class="z-0 grid_custom sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 hover:text-gray-900">
 
             <!-- grid items -->
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ± </span><p class="grid_item_bottom_text text-base">Plus Minus<span class="hidden">pm</span></p></div>
@@ -55,9 +55,9 @@
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≪ </span><p class="grid_item_bottom_text text-base">Much Less Than<span class="hidden">mlt ll</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> > </span><p class="grid_item_bottom_text text-base">Greater Than<span class="hidden">gt</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≫ </span><p class="grid_item_bottom_text text-base">Much Greater Than<span class="hidden">mgt gg</span></p></div>
-            <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≤ </span><p class="grid_item_bottom_text text-base">Less Than or Equal to<span class="hidden">ltet leq</span></p></div>
+            <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≤ </span><p class="grid_item_bottom_text text-base">Less Than or <br> Equal to<span class="hidden">ltet leq</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∓ </span><p class="grid_item_bottom_text text-base">Minus Plus<span class="hidden">mp</span></p></div>
-            <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≅ </span><p class="grid_item_bottom_text text-base">Approximately Equal to<span class="hidden">cong aet</span></p></div>
+            <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≅ </span><p class="grid_item_bottom_text text-base">Approximately <br> Equal to<span class="hidden">cong aet</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≈ </span><p class="grid_item_bottom_text text-base">Almost Equal to<span class="hidden">asymptotic to</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ≡ </span><p class="grid_item_bottom_text text-base">Identical to<span class="hidden">equivalent</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∀ </span><p class="grid_item_bottom_text text-base">For All<span class="hidden">fa</span></p></div>
@@ -76,7 +76,7 @@
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∆ </span><p class="grid_item_bottom_text text-base">Increment<span class="hidden">triangle</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∇ </span><p class="grid_item_bottom_text text-base">Nabla<span class="hidden">upside down triangle</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∃ </span><p class="grid_item_bottom_text text-base">There Exists<span class="hidden">te</span></p></div>
-            <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∄ </span><p class="grid_item_bottom_text text-base">There Does Not Exist<span class="hidden">tdne</span></p></div>
+            <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∄ </span><p class="grid_item_bottom_text text-base">There <br> Does Not Exist<span class="hidden">tdne</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> = </span><p class="grid_item_bottom_text text-base">Equal</p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∈ </span><p class="grid_item_bottom_text text-base">Element of<span class="hidden">eo belongs to bt</span></p></div>
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ∋ </span><p class="grid_item_bottom_text text-base">Contains as Member<span class="hidden">cam</span></p></div>
