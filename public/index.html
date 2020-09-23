@@ -9,9 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body class="bg-gray-100 font-body">
-
     <!-- copy successful message  -->
-    <div class="z-10 copy_successful_message font-sub_title hidden" id="copy_successful">
+    <div class="z-10 fixed text-teal-100 bg-teal-500 shadow-md border-2 border-teal-700 uppercase pl-4 pr-4 pt-2 pb-2 rounded-lg mb-4 ml-4 bottom-0 left-0 cursor-not-allowed font-sub_title hidden" id="copy_successful">
         <table>
             <tr>
                 <td><svg viewBox="0 0 20 20" fill="currentColor" class="check-circle w-6 h-6"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></td>
@@ -20,14 +19,19 @@
         </table>
     </div>
 
+    <!-- go to top of the page -->
+    <a id="top_of_the_page" class="hidden fixed z-10 text-teal-100 bg-teal-500 shadow-md border-2 border-teal-700 uppercase p-3 m-4 rounded-full bottom-0 right-0 cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </a>
+
     <!-- container starts here -->
     <div class="p-5 md:container md:mx-auto">
 
         <!-- main title -->
-        <p class="main_title font-main_title md:pt-16">Symbol Search</p>
+        <p class="text-4xl text-gray-900 pt-10 font-bold text-center uppercase font-main_title md:pt-16">Symbol Search</p>
 
         <!-- sub title -->
-        <p class="sub_title font-sub_title">Made for work by <span class="block md:inline"><a href="#" target="_blank"><span class="border-b-8 border-teal-200 transition duration-200 ease-in-out hover:border-teal-400 hover:text-gray-800">Farhan Bin Amin</span></a></span></p>
+        <p class="text-xl text-gray-600 pt-2 pb-10 font-medium tracking-tight text-center font-sub_title">Made for work by <span class="block md:inline"><a href="#" target="_blank"><span class="border-b-8 border-teal-200 transition duration-200 ease-in-out hover:border-teal-400 hover:text-gray-800">Farhan Bin Amin</span></a></span></p>
 
         <!-- bounce animation -->
         <div class="flex justify-center items-center mb-8">
@@ -37,10 +41,10 @@
         </div>
 
         <!-- search box -->
-        <input type="text" id="search_input_text" class="shadow-custom sticky top-0 z-10 search_box focus:outline-none focus:bg-white focus:border-teal-400 hover:bg-white" type="text" placeholder=" Search 70 symbols ...">
+        <input type="text" id="search_input_text" class="shadow-custom sticky top-0 z-10 mb-5 appearance-none border-2 bg-gray-100 border-teal-200 rounded-tl-lg rounded-br-lg w-full py-2 px-4 text-gray-700 leading-tight transition duration-200 ease-in-out focus:outline-none focus:bg-white focus:border-teal-400 hover:bg-white" type="text" placeholder=" Search 70 symbols ...">
 
         <!-- grid custom -->
-        <div class="z-0 grid_custom sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 hover:text-gray-900">
+        <div class="z-0 text-gray-700 grid gap-x-5 gap-y-5 grid-flow-row grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 hover:text-gray-900">
 
             <!-- grid items -->
             <div class="grid_item_each sm:h-32 md:h-40 hover:border-teal-400" onclick="copySuccessfulMessage();"><span class="text-4xl symbol_to_copy"> ± </span><p class="grid_item_bottom_text text-xs md:text-base">Plus Minus<span class="hidden">pm</span></p></div>
@@ -151,6 +155,22 @@
                 var s = $(this).text().toLowerCase();
                 $(this).closest('.grid_item_each')[ s.indexOf(g) !== -1 ? 'show' : 'hide' ]();
             });
+        });
+
+        // go to top of the page
+        var btn = $('#top_of_the_page');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() >= 500 ) {
+            btn.show();
+        } else {
+            btn.hide();
+        }
+        });
+
+        btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
         });
     </script>
 </body>

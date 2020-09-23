@@ -4,26 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.copy_successful_message{
-    @apply fixed text-teal-100 bg-teal-500 shadow-md border-2 border-teal-700 uppercase pl-4 pr-4 pt-2 pb-2 rounded-lg mb-4 ml-4 bottom-0 left-0 cursor-not-allowed;
-}
-
-.main_title{
-    @apply text-4xl text-gray-900 pt-10 font-bold text-center uppercase;
-}
-
-.sub_title{
-    @apply text-xl text-gray-600 pt-2 pb-10 font-medium tracking-tight text-center
-}
-
-.search_box{
-    @apply mb-5 appearance-none border-2 bg-gray-100 border-teal-200 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight transition duration-200 ease-in-out;
-}
-
-.grid_custom{
-    @apply text-gray-700 grid gap-x-5 gap-y-5 grid-flow-row grid-cols-2;
-}
-
 .grid_item_each{
     @apply border-solid border-2 border-teal-200 rounded-lg flex justify-center items-center cursor-pointer relative h-32 transition duration-200 ease-in-out;
 }
