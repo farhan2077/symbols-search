@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Poppins:wght@700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@700&family=Space+Mono&display=swap');
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -10088,7 +10088,7 @@ video {
 }
 
 .font-body{
-  font-family: IBM Plex Serif;
+  font-family: Libre Baskerville;
 }
 
 .font-main_title{
@@ -31815,7 +31815,7 @@ video {
   }
 
   .sm\:font-body{
-    font-family: IBM Plex Serif;
+    font-family: Libre Baskerville;
   }
 
   .sm\:font-main_title{
@@ -53450,7 +53450,7 @@ video {
   }
 
   .md\:font-body{
-    font-family: IBM Plex Serif;
+    font-family: Libre Baskerville;
   }
 
   .md\:font-main_title{
@@ -75085,7 +75085,7 @@ video {
   }
 
   .lg\:font-body{
-    font-family: IBM Plex Serif;
+    font-family: Libre Baskerville;
   }
 
   .lg\:font-main_title{
@@ -96720,7 +96720,7 @@ video {
   }
 
   .xl\:font-body{
-    font-family: IBM Plex Serif;
+    font-family: Libre Baskerville;
   }
 
   .xl\:font-main_title{

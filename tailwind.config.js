@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        body: ['IBM Plex Serif'],
+        body: ['Libre Baskerville'],
         main_title: ['Poppins'],
         sub_title: ['Space Mono']
       },
