@@ -1,5 +1,5 @@
 # Symbol Search
-Tired of searching for symbols for assignment? Go to <a href="https://symbol-search.netlify.app/">Symbol Search</a> and find them right away.
+Tired of searching for symbols for assignments? Go to <a href="https://symbol-search.netlify.app/">Symbol Search</a> and find them right away.
 
 ![](https://img.shields.io/badge/Total%20symbols%3A-344-lightblue?style=for-the-badge&logo=appveyor)
 
