@@ -9,7 +9,7 @@
 
 <a href="#key-features">Key features</a> •
 <a href="#install">Install</a> •
-<a href="#team">Contribute</a> •
+<a href="#contribute">Contribute</a> •
 <a href="#license">License</a>
 
 </div>
