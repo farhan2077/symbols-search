@@ -1,0 +1,20 @@
+{
+  "name": "symbol-search-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "autoprefixer": "^10.2.6",
+    "next": "11.0.0",
+    "next-themes": "^0.0.14",
+    "postcss": "^8.3.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.2.0"
+  }
+}
