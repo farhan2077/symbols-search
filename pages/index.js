@@ -132,7 +132,7 @@ export default function Home({ symbols }) {
       {/* hero */}
       <section className="my-10">
         <p className="text-4xl font-semibold tracking-tight text-gray-800 uppercase dark:text-white">
-          Symbol search
+          Symbols search
         </p>
         <p className="mt-2 text-gray-500 dark:text-gray-400">
           Find symbols from "Microsoft Word equation" easily.

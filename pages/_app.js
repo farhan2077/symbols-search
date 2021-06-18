@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Symbol Search</title>
+        <title>Symbols Search</title>
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#5EEAD4" />
         <meta
