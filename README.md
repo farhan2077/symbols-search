@@ -16,8 +16,8 @@
 
 ## Key features
 
-- Flexible search feature (symbol name, latex or any alias)
-- Reverse search feature (paste the symbol and get the symbol name)
+- Flexible search feature (symbol name → symbol / symbol → symbol name)
+- Press slash (/) to focus the search bar
 - Dark mode baby 😎
 
 ## Install
