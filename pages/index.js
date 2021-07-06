@@ -155,7 +155,7 @@ export default function Home({ symbols }) {
               className="w-full ml-2 text-sm text-gray-600 placeholder-gray-400 outline-none appearance-none md:text-base dark:text-white focus:placeholder-gray-300 dark:placeholder-gray-400 dark:focus:placeholder-gray-500 bg-gray-50 dark:bg-gray-700 focus:outline-none"
               placeholder="Search 338 symbols"
             />
-            <div className="text-gray-600 dark:text-white bg-white dark:bg-gray-900 border border-solid border-gray-200 dark:border-gray-600 rounded-md shadow-md px-2.5 py-1">
+            <div className="select-none text-gray-600 dark:text-white bg-white dark:bg-gray-900 border border-solid border-gray-200 dark:border-gray-600 rounded-md shadow-md dark:shadow-md-gray px-2.5 py-1">
               /
             </div>
           </div>
