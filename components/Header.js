@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 import ThemeSwitcher from "./ThemeSwitcher";
@@ -34,7 +33,7 @@ export default function Navbar() {
         {/* github */}
         <a href="https://github.com/farhan2077/symbol-search">
           <svg
-            className="w-8 h-8 text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-150 ease-in-out"
+            className="w-8 h-8 text-gray-800 transition-colors duration-150 ease-in-out dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="currentColor"

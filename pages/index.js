@@ -1,17 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
-import Header from "../components/Header";
 import { debounce } from "../utils/debounce";
 import { SYMBOLS } from "../data/data";
-
-export async function getStaticProps() {
-  return {
-    props: {
-      symbols: SYMBOLS,
-    },
-  };
-}
 
 function CopySuccessfulToast() {
   return (
@@ -134,7 +125,7 @@ export default function Home({ symbols }) {
         <p className="text-4xl font-semibold tracking-tight text-gray-800 uppercase dark:text-white">
           Symbols search
         </p>
-        <p className="mt-2 text-gray-500 dark:text-gray-400">
+        <p className="mt-2 text-gray-500 dark:text-gray-300">
           Find symbols from &quot;Microsoft Word equation&quot; easily.
         </p>
       </section>
@@ -195,4 +186,12 @@ export default function Home({ symbols }) {
       </section>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      symbols: SYMBOLS,
+    },
+  };
 }
