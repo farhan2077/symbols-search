@@ -1,7 +1,7 @@
 <div align="center">
     <h1>SYMBOLS SEARCH</h1>
 
-<strong>Find symbols from "Microsoft Word equation" easily.</strong>
+<strong>Find symbols from "Microsoft Word equation" easily</strong>
 
 ![](https://img.shields.io/badge/total%20symbols-338-%2399F6E4?style=flat-square&logo=appveyor)
 [![GitHub stars](https://img.shields.io/github/stars/farhan2077/symbols-search?color=%2399F6E4&style=flat-square)](https://github.com/farhan2077/symbols-search/stargazers)
@@ -39,9 +39,11 @@ cd symbols-search
 # Install dependencies
 yarn
 
-# Start the pluto store server
+# Start dev server
 yarn dev
 ```
+
+Open `http://localhost:3000` in your browser.
 
 ## Contribute
 
