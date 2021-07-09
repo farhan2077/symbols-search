@@ -3,9 +3,10 @@
 
 <strong>Find symbols from "Microsoft Word equation" easily</strong>
 
-![](https://img.shields.io/badge/total%20symbols-338-%2399F6E4?style=flat-square&logo=appveyor)
-[![GitHub stars](https://img.shields.io/github/stars/farhan2077/symbols-search?color=%2399F6E4&style=flat-square)](https://github.com/farhan2077/symbols-search/stargazers)
-[![GitHub license](https://img.shields.io/github/license/farhan2077/symbols-search?color=%2399F6E4&style=flat-square)](https://github.com/farhan2077/symbols-search/blob/master/LICENSE)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/farhan2077/symbols-search)
+![](https://img.shields.io/badge/total%20symbols-338-&)
+[![GitHub stars](https://img.shields.io/github/stars/farhan2077/symbols-search)](https://github.com/farhan2077/symbols-search/stargazers)
+[![GitHub license](https://img.shields.io/github/license/farhan2077/symbols-search)](https://github.com/farhan2077/symbols-search/blob/master/LICENSE)
 
 <a href="#key-features">Key features</a> •
 <a href="#install">Install</a> •
