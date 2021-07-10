@@ -3,7 +3,6 @@
 
 <strong>Find symbols from "Microsoft Word equation" easily</strong>
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/farhan2077/symbols-search)
 ![](https://img.shields.io/badge/total%20symbols-338-&)
 [![GitHub stars](https://img.shields.io/github/stars/farhan2077/symbols-search)](https://github.com/farhan2077/symbols-search/stargazers)
 [![GitHub license](https://img.shields.io/github/license/farhan2077/symbols-search)](https://github.com/farhan2077/symbols-search/blob/master/LICENSE)
