@@ -14,14 +14,17 @@ export default function Footer() {
     <footer className="flex flex-col items-center justify-between gap-4 my-10 sm:flex-row">
       <div>
         <span className="text-gray-500 dark:text-gray-400">Made by</span>{" "}
-        <a
+        {/* <a
           href="https://twitter.com/farhanbinamin"
           target="_blank"
           rel="noopener noreferrer"
           className="font-medium text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-gray-400"
         >
           @farhanbinamin
-        </a>
+        </a> */}
+        <span className="font-medium text-gray-900 dark:text-white">
+          @farhanbinamin
+        </span>
       </div>
       {shareableLinkCopied ? (
         <p className="px-3 py-1.5 text-teal-600 dark:text-teal-500">
