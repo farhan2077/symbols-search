@@ -6,7 +6,7 @@ import { SYMBOLS } from "../data/data";
 
 function CopySuccessfulToast() {
   return (
-    <div className="fixed bottom-0 left-0 z-10 px-4 py-2 m-4 text-white bg-teal-500 border-2 border-teal-700 border-solid rounded-lg dark:bg-teal-200 dark:text-gray-900 dark:border-teal-500">
+    <div className="fixed bottom-0 left-0 z-10 px-4 py-2 m-4 text-white bg-teal-600 rounded-lg dark:bg-teal-200 dark:text-gray-900">
       <div className="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ function CopySuccessfulToast() {
 function BackToTop() {
   return (
     <Link href="/">
-      <a className="fixed bottom-0 right-0 z-10 p-3 m-4 text-white bg-teal-500 border-2 border-teal-700 border-solid rounded-full dark:border-teal-500 dark:bg-teal-200 dark:text-gray-900">
+      <a className="fixed bottom-0 right-0 z-10 p-3 m-4 text-white bg-teal-600 rounded-full dark:bg-teal-200 dark:text-gray-900">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 h-5"
@@ -122,17 +122,17 @@ export default function Home({ symbols }) {
 
       {/* hero */}
       <section className="my-10">
-        <p className="text-4xl font-semibold tracking-tight text-gray-800 uppercase dark:text-white">
+        <h1 className="text-4xl font-semibold tracking-tight text-gray-900 uppercase dark:text-white">
           Symbols search
-        </p>
-        <p className="mt-2 text-gray-500 dark:text-gray-300">
+        </h1>
+        <p className="mt-2 text-gray-700 dark:text-gray-300">
           Find symbols from &quot;Microsoft Word equation&quot; easily.
         </p>
       </section>
 
       {/* input */}
       <section className="sticky top-0 z-10 bg-white rounded-b-lg group dark:bg-gray-900">
-        <div className="px-4 py-3 mb-8 border-2 border-teal-200 border-solid rounded-lg bg-gray-50 dark:bg-gray-700 focus-within:border-teal-400 dark:focus-within:border-teal-500 border-transition">
+        <div className="px-4 py-3 mb-8 bg-gray-100 border-2 border-teal-300 border-solid rounded-lg dark:bg-gray-700 focus-within:border-teal-400 dark:focus-within:border-teal-500 border-transition">
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,8 +152,8 @@ export default function Home({ symbols }) {
               ref={textInput}
               type="text"
               onChange={(e) => handleSearch(e)}
-              className="w-full ml-2 text-sm text-gray-600 placeholder-gray-400 outline-none appearance-none md:text-base dark:text-white focus:placeholder-gray-300 dark:placeholder-gray-400 dark:focus:placeholder-gray-500 bg-gray-50 dark:bg-gray-700 focus:outline-none"
-              placeholder="Search 338 symbols"
+              className="w-full ml-2 text-sm text-gray-700 placeholder-gray-500 bg-gray-100 outline-none appearance-none md:text-base dark:text-white focus:placeholder-gray-400 dark:placeholder-gray-400 dark:focus:placeholder-gray-500 dark:bg-gray-700 focus:outline-none"
+              placeholder="Search 338 symbols (Press / to focus)"
             />
             <div className="select-none text-gray-600 dark:text-white bg-white dark:bg-gray-900 border border-solid border-gray-200 dark:border-gray-600 rounded-md shadow-md dark:shadow-md-gray px-2.5 py-1">
               /
@@ -163,7 +163,7 @@ export default function Home({ symbols }) {
       </section>
 
       {/* grid */}
-      <section className="z-0 grid grid-flow-row grid-cols-2 gap-8 text-gray-700 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 hover:text-gray-900">
+      <section className="z-0 grid grid-flow-row grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 hover:text-gray-900">
         {filteredResult.map((symbol) => (
           <div
             onClick={() => {
@@ -171,13 +171,13 @@ export default function Home({ symbols }) {
               navigator.clipboard.writeText(symbol.symbol);
             }}
             key={symbol.id}
-            className="border-2 border-teal-200 border-solid rounded-lg cursor-pointer dark:hover:border-teal-500 bg-gray-50 dark:bg-gray-700 aspect-h-4 aspect-w-4 hover:border-teal-400 border-transition"
+            className="bg-gray-100 border-2 border-gray-100 border-solid rounded-lg cursor-pointer dark:border-gray-700 dark:hover:border-teal-500 dark:bg-gray-700 aspect-h-4 aspect-w-4 hover:border-teal-400"
           >
             <div className="flex">
-              <div className="m-auto text-4xl text-gray-600 font-display dark:text-white">
+              <div className="m-auto text-4xl text-gray-900 font-display dark:text-white">
                 {symbol.symbol}
               </div>
-              <div className="absolute inset-x-0 bottom-0 px-1 pb-1 text-sm text-center text-gray-500 lowercase dark:text-gray-300">
+              <div className="absolute inset-x-0 bottom-0 px-1 pb-1 text-sm text-center text-gray-700 lowercase dark:text-gray-300">
                 {symbol.name}
               </div>
             </div>

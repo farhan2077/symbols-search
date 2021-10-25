@@ -7,9 +7,9 @@ export default function Navbar() {
     <header className="flex items-center justify-between mt-5">
       {/* logo */}
       <Link href="/">
-        <a>
+        <a aria-label="Symbols search">
           <svg
-            className="w-10 h-10 border-2 border-teal-200 border-solid rounded-lg dark:border-teal-300 dark:bg-white"
+            className="w-10 h-10 border-2 border-teal-300 border-solid rounded-lg dark:border-teal-300 dark:bg-white"
             viewBox="0 0 512 512"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,10 @@ export default function Navbar() {
       </Link>
       <div className="flex items-center gap-6">
         {/* github */}
-        <a href="https://github.com/farhan2077/symbol-search">
+        <a
+          href="https://github.com/farhan2077/symbol-search"
+          aria-label="Github repository link"
+        >
           <svg
             className="w-8 h-8 text-gray-800 transition-colors duration-150 ease-in-out dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-300"
             xmlns="http://www.w3.org/2000/svg"

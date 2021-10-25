@@ -10,7 +10,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      aria-label="Toggle Dark Mode"
+      aria-label="Toggle theme to light mode or dark"
       type="button"
       className="w-10 h-10 focus:outline-none"
       onClick={() =>
